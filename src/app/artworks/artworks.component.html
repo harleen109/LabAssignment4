@@ -125,8 +125,8 @@
                 </div>
                 <h1>Similar Products</h1>
                 <div class="similar-products">
-                    <app-similar-product-card [item]="items"></app-similar-product-card>
                     <div class="bordered" *ngFor="let item of similarProducts">
+                       <!-- <app-similar-product-card></app-similar-product-card>-->
                         <img [src]="item.image_url" alt="img1">
                         <p class="small-text">{{item.description}}</p>
                         <div class="btn-group">
